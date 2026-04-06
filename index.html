@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TITAN FITNESS — Forje Seus Limites</title>
+  <meta name="description" content="A academia mais completa da cidade. Equipamentos de última geração, personal trainers especializados e programas que realmente funcionam.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================== NAVBAR ============================== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <span class="logo-titan">TITAN</span><span class="logo-fitness">FITNESS</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#programs">Programas</a></li>
+      <li><a href="#gallery">Estrutura</a></li>
+      <li><a href="#trainers">Equipe</a></li>
+      <li><a href="#pricing">Planos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <a href="https://wa.me/5511999999999" class="nav-cta" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i> Matricule-se
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+  <ul>
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#programs">Programas</a></li>
+    <li><a href="#gallery">Estrutura</a></li>
+    <li><a href="#trainers">Equipe</a></li>
+    <li><a href="#pricing">Planos</a></li>
+    <li><a href="#contact">Contato</a></li>
+  </ul>
+  <a href="https://wa.me/5511999999999" class="mobile-cta" target="_blank" rel="noopener">
+    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+  </a>
+</div>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=90" alt="" aria-hidden="true">
+    <div class="hero-bg-overlay"></div>
+  </div>
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-deco" aria-hidden="true">TITAN</div>
+  <div class="hero-content">
+    <div class="hero-badge reveal">
+      <span class="badge-dot"></span> Academia Premium · Desde 2015
+    </div>
+    <h1 class="hero-title">
+      <span class="hero-line reveal" data-delay="100">FORJE</span>
+      <span class="hero-line hero-line--accent reveal" data-delay="200">SEUS</span>
+      <span class="hero-line reveal" data-delay="300">LIMITES</span>
+    </h1>
+    <p class="hero-subtitle reveal" data-delay="400">
+      Equipamentos de última geração. Personal trainers de elite.<br>
+      Resultados que transformam corpo e mente.
+    </p>
+    <div class="hero-ctas reveal" data-delay="500">
+      <a href="https://wa.me/5511999999999" class="btn-primary" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> Começar Agora
+      </a>
+      <a href="#programs" class="btn-primary">
+        Ver Programas <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+    <div class="hero-stats reveal" data-delay="600">
+      <div class="hero-stat">
+        <span class="stat-val">2.500<span class="stat-plus">+</span></span>
+        <span class="stat-lbl">Membros Ativos</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="hero-stat">
+        <span class="stat-val">15<span class="stat-plus">+</span></span>
+        <span class="stat-lbl">Trainers Elite</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="hero-stat">
+        <span class="stat-val">10</span>
+        <span class="stat-lbl">Anos de Excelência</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <div class="scroll-wheel">
+      <div class="scroll-dot"></div>
+    </div>
+    <span>Role para explorar</span>
+  </div>
+</section>
+
+<!-- ============================== TICKER ============================== -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span>FORÇA</span><span class="sep">◆</span>
+    <span>RESISTÊNCIA</span><span class="sep">◆</span>
+    <span>DISCIPLINA</span><span class="sep">◆</span>
+    <span>PERFORMANCE</span><span class="sep">◆</span>
+    <span>EVOLUÇÃO</span><span class="sep">◆</span>
+    <span>SUPERAÇÃO</span><span class="sep">◆</span>
+    <span>CONQUISTA</span><span class="sep">◆</span>
+    <span>FORÇA</span><span class="sep">◆</span>
+    <span>RESISTÊNCIA</span><span class="sep">◆</span>
+    <span>DISCIPLINA</span><span class="sep">◆</span>
+    <span>PERFORMANCE</span><span class="sep">◆</span>
+    <span>EVOLUÇÃO</span><span class="sep">◆</span>
+    <span>SUPERAÇÃO</span><span class="sep">◆</span>
+    <span>CONQUISTA</span><span class="sep">◆</span>
+  </div>
+</div>
+
+<!-- ============================== ABOUT ============================== -->
+<section class="about section-pad" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visuals reveal-left">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900&q=90" alt="Academia Titan Fitness — Musculação" loading="lazy">
+        </div>
+        <div class="about-img-secondary">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80" alt="Treino" loading="lazy">
+        </div>
+        <div class="about-float-badge">
+          <span class="float-num">10<span>+</span></span>
+          <span class="float-txt">Anos de<br>Excelência</span>
+        </div>
+      </div>
+      <div class="about-content reveal-right">
+        <div class="section-tag">Nossa História</div>
+        <h2 class="section-title">Uma Academia que<br><span class="gradient-text">Transforma Vidas</span></h2>
+        <p class="about-text">
+          Fundada com a missão de democratizar o fitness de alta performance, a Titan Fitness se tornou referência em treinamento de qualidade. Nossa estrutura de última geração é projetada para extrair o máximo de cada atleta — do iniciante ao avançado.
+        </p>
+        <p class="about-text">
+          Acreditamos que transformação física é apenas o começo. Aqui, você desenvolve disciplina, confiança e um estilo de vida que vai muito além das paredes da academia.
+        </p>
+        <div class="about-features">
+          <div class="feat-item">
+            <i class="fas fa-dumbbell"></i><span>Equipamentos Premium</span>
+          </div>
+          <div class="feat-item">
+            <i class="fas fa-users"></i><span>Comunidade Forte</span>
+          </div>
+          <div class="feat-item">
+            <i class="fas fa-heartbeat"></i><span>Avaliação Física Gratuita</span>
+          </div>
+          <div class="feat-item">
+            <i class="fas fa-clock"></i><span>Aberto 24 horas</span>
+          </div>
+        </div>
+        <a href="#contact" class="btn-primary">Conhecer a Estrutura</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== STATS ============================== -->
+<section class="stats-section">
+  <div class="stats-inner">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal" data-delay="0">
+          <i class="fas fa-users stat-ico"></i>
+          <span class="stat-big" data-target="2500">0</span>
+          <span class="stat-suffix">+</span>
+          <span class="stat-desc">Membros Ativos</span>
+        </div>
+        <div class="stat-card reveal" data-delay="100">
+          <i class="fas fa-medal stat-ico"></i>
+          <span class="stat-big" data-target="15">0</span>
+          <span class="stat-suffix">+</span>
+          <span class="stat-desc">Personal Trainers</span>
+        </div>
+        <div class="stat-card reveal" data-delay="200">
+          <i class="fas fa-fire stat-ico"></i>
+          <span class="stat-big" data-target="50">0</span>
+          <span class="stat-suffix">+</span>
+          <span class="stat-desc">Modalidades</span>
+        </div>
+        <div class="stat-card reveal" data-delay="300">
+          <i class="fas fa-trophy stat-ico"></i>
+          <span class="stat-big" data-target="10">0</span>
+          <span class="stat-suffix">+</span>
+          <span class="stat-desc">Anos de História</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROGRAMS ============================== -->
+<section class="programs section-pad" id="programs">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Modalidades</div>
+      <h2 class="section-title">Programas para<br><span class="gradient-text">Cada Objetivo</span></h2>
+      <p class="section-desc">Do condicionamento básico à performance de elite — temos o programa certo para você.</p>
+    </div>
+    <div class="programs-grid">
+      <div class="prog-card reveal" data-delay="0">
+        <div class="prog-icon"><i class="fas fa-dumbbell"></i></div>
+        <div class="prog-tag">Musculação</div>
+        <h3>Hipertrofia & Força</h3>
+        <p>Programa periodizado para ganho de massa muscular e desenvolvimento de força máxima com acompanhamento especializado.</p>
+        <div class="prog-meta">
+          <span><i class="fas fa-clock"></i> 60–90 min</span>
+          <span><i class="fas fa-signal"></i> Todos os níveis</span>
+        </div>
+        <a href="https://wa.me/5511999999999?text=Quero saber mais sobre Musculação!" class="prog-link" target="_blank">
+          Saiba mais <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="prog-card featured reveal" data-delay="100">
+        <div class="prog-badge">Mais Popular</div>
+        <div class="prog-icon"><i class="fas fa-bolt"></i></div>
+        <div class="prog-tag">HIIT</div>
+        <h3>Alta Intensidade</h3>
+        <p>Treinos explosivos que maximizam a queima calórica e melhoram radicalmente o condicionamento cardiovascular.</p>
+        <div class="prog-meta">
+          <span><i class="fas fa-clock"></i> 45 min</span>
+          <span><i class="fas fa-signal"></i> Intermediário</span>
+        </div>
+        <a href="https://wa.me/5511999999999?text=Quero saber mais sobre HIIT!" class="prog-link" target="_blank">
+          Saiba mais <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="prog-card reveal" data-delay="200">
+        <div class="prog-icon"><i class="fas fa-fire"></i></div>
+        <div class="prog-tag">Cardio</div>
+        <h3>Emagrecimento</h3>
+        <p>Protocolos científicos combinando cardio, musculação e orientação nutricional para resultados reais.</p>
+        <div class="prog-meta">
+          <span><i class="fas fa-clock"></i> 60 min</span>
+          <span><i class="fas fa-signal"></i> Iniciante</span>
+        </div>
+        <a href="https://wa.me/5511999999999?text=Quero saber mais sobre Emagrecimento!" class="prog-link" target="_blank">
+          Saiba mais <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="prog-card reveal" data-delay="0">
+        <div class="prog-icon"><i class="fas fa-shield-halved"></i></div>
+        <div class="prog-tag">Lutas</div>
+        <h3>Artes Marciais</h3>
+        <p>Muay Thai, Jiu-Jitsu e Boxe com professores graduados, experiência competitiva comprovada.</p>
+        <div class="prog-meta">
+          <span><i class="fas fa-clock"></i> 60 min</span>
+          <span><i class="fas fa-signal"></i> Todos os níveis</span>
+        </div>
+        <a href="https://wa.me/5511999999999?text=Quero saber mais sobre Artes Marciais!" class="prog-link" target="_blank">
+          Saiba mais <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="prog-card reveal" data-delay="100">
+        <div class="prog-icon"><i class="fas fa-spa"></i></div>
+        <div class="prog-tag">Mind & Body</div>
+        <h3>Yoga & Pilates</h3>
+        <p>Equilíbrio entre corpo e mente, flexibilidade, postura e bem-estar com aulas ao vivo e gravadas.</p>
+        <div class="prog-meta">
+          <span><i class="fas fa-clock"></i> 60 min</span>
+          <span><i class="fas fa-signal"></i> Todos os níveis</span>
+        </div>
+        <a href="https://wa.me/5511999999999?text=Quero saber mais sobre Yoga e Pilates!" class="prog-link" target="_blank">
+          Saiba mais <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="prog-card reveal" data-delay="200">
+        <div class="prog-icon"><i class="fas fa-user-tie"></i></div>
+        <div class="prog-tag">Exclusivo</div>
+        <h3>Personal Training</h3>
+        <p>Acompanhamento 100% personalizado com avaliação física completa e planejamento individual por objetivos.</p>
+        <div class="prog-meta">
+          <span><i class="fas fa-clock"></i> 60 min</span>
+          <span><i class="fas fa-signal"></i> Todos os níveis</span>
+        </div>
+        <a href="https://wa.me/5511999999999?text=Quero saber mais sobre Personal Training!" class="prog-link" target="_blank">
+          Saiba mais <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== GALLERY ============================== -->
+<section class="gallery section-pad" id="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Infraestrutura</div>
+      <h2 class="section-title">Nossa <span class="gradient-text">Estrutura</span></h2>
+      <p class="section-desc">Equipamentos de última geração para levar seu treino ao próximo nível.</p>
+    </div>
+  </div>
+  <div class="gallery-mosaic">
+    <div class="gal-item tall reveal-scale">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200&q=90" alt="Área de Musculação" loading="lazy">
+      <div class="gal-overlay"><span>Musculação</span></div>
+    </div>
+    <div class="gal-item reveal-scale" data-delay="100">
+      <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800&q=85" alt="Área Funcional" loading="lazy">
+      <div class="gal-overlay"><span>Funcional</span></div>
+    </div>
+    <div class="gal-item reveal-scale" data-delay="200">
+      <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=800&q=85" alt="Área Cardio" loading="lazy">
+      <div class="gal-overlay"><span>Cardio</span></div>
+    </div>
+    <div class="gal-item wide reveal-scale" data-delay="100">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&q=85" alt="Vestiários" loading="lazy">
+      <div class="gal-overlay"><span>Vestiários Premium</span></div>
+    </div>
+    <div class="gal-item reveal-scale" data-delay="200">
+      <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?w=800&q=85" alt="Sala de Aulas" loading="lazy">
+      <div class="gal-overlay"><span>Sala de Aulas</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== TRAINERS ============================== -->
+<section class="trainers section-pad" id="trainers">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Nossa Equipe</div>
+      <h2 class="section-title">Trainers<br><span class="gradient-text">de Elite</span></h2>
+      <p class="section-desc">Profissionais certificados e apaixonados por resultados.</p>
+    </div>
+    <div class="trainers-grid">
+      <div class="trainer-card reveal" data-delay="0">
+        <div class="trainer-img-wrap">
+          <img src="img/carlos.jpg" alt="Carlos Silva" loading="lazy">
+          <div class="trainer-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="trainer-info">
+          <h3>Carlos Silva</h3>
+          <span class="trainer-role">Musculação & Hipertrofia</span>
+          <div class="trainer-certs">
+            <span>CREF Ativo</span>
+            <span>NSCA-CSCS</span>
+          </div>
+        </div>
+      </div>
+      <div class="trainer-card reveal" data-delay="100">
+        <div class="trainer-img-wrap">
+          <img src="img/ana.png" alt="Ana Costa" loading="lazy">
+          <div class="trainer-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="trainer-info">
+          <h3>Ana Costa</h3>
+          <span class="trainer-role">Pilates & Yoga</span>
+          <div class="trainer-certs">
+            <span>CREF Ativo</span>
+            <span>Pilates Certified</span>
+          </div>
+        </div>
+      </div>
+      <div class="trainer-card reveal" data-delay="200">
+        <div class="trainer-img-wrap">
+          <img src="img/rafael.jpg" alt="Rafael Mendes" loading="lazy">
+          <div class="trainer-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="trainer-info">
+          <h3>Rafael Mendes</h3>
+          <span class="trainer-role">HIIT & Funcional</span>
+          <div class="trainer-certs">
+            <span>CREF Ativo</span>
+            <span>CrossFit L2</span>
+          </div>
+        </div>
+      </div>
+      <div class="trainer-card reveal" data-delay="300">
+        <div class="trainer-img-wrap">
+          <img src="img/juliana.jpg" alt="Juliana Ferreira" loading="lazy">
+          <div class="trainer-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="trainer-info">
+          <h3>Juliana Ferreira</h3>
+          <span class="trainer-role">Emagrecimento & Nutrição</span>
+          <div class="trainer-certs">
+            <span>CREF Ativo</span>
+            <span>Nutricionista</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== TESTIMONIALS ============================== -->
+<section class="testimonials section-pad">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Depoimentos</div>
+      <h2 class="section-title">Histórias de<br><span class="gradient-text">Transformação</span></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal" data-delay="0">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Perdi 18 kg em 6 meses com o acompanhamento da equipe Titan. O suporte dos personal trainers foi fundamental para manter a consistência nos momentos difíceis."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MP</div>
+          <div>
+            <strong>Marcos Paulo</strong>
+            <span>Membro há 8 meses</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card featured-testi reveal" data-delay="100">
+        <div class="testi-stars">★★★★★</div>
+        <p>"A Titan Fitness mudou minha relação com exercício. Não é só uma academia — é uma comunidade que te motiva todos os dias. Melhor investimento que já fiz."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">FL</div>
+          <div>
+            <strong>Fernanda Lima</strong>
+            <span>Membro há 2 anos</span>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal" data-delay="200">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Infraestrutura impressionante e equipe altamente qualificada. Ganhei 8 kg de massa muscular em um ano. Resultado que não encontrei em nenhum outro lugar."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">DR</div>
+          <div>
+            <strong>Diego Rocha</strong>
+            <span>Membro há 1 ano</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PRICING ============================== -->
+<section class="pricing section-pad" id="pricing">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Planos</div>
+      <h2 class="section-title">Invista na sua<br><span class="gradient-text">Melhor Versão</span></h2>
+      <p class="section-desc">Planos flexíveis para se adaptar à sua rotina e objetivos.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card reveal" data-delay="0">
+        <div class="price-plan">Básico</div>
+        <div class="price-val">
+          <span class="cur">R$</span><span class="val">99</span><span class="per">/mês</span>
+        </div>
+        <ul class="price-feats">
+          <li class="ok"><i class="fas fa-check"></i> Acesso à musculação</li>
+          <li class="ok"><i class="fas fa-check"></i> Área de cardio</li>
+          <li class="ok"><i class="fas fa-check"></i> Vestiários premium</li>
+          <li class="ok"><i class="fas fa-check"></i> 1 avaliação física</li>
+          <li class="no"><i class="fas fa-times"></i> Aulas em grupo</li>
+          <li class="no"><i class="fas fa-times"></i> Personal training</li>
+        </ul>
+        <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse no Plano Básico." class="btn-outline" target="_blank" rel="noopener">Começar Agora</a>
+      </div>
+      <div class="price-card featured-price reveal" data-delay="100">
+        <div class="price-badge">Mais Popular</div>
+        <div class="price-plan">Premium</div>
+        <div class="price-val">
+          <span class="cur">R$</span><span class="val">169</span><span class="per">/mês</span>
+        </div>
+        <ul class="price-feats">
+          <li class="ok"><i class="fas fa-check"></i> Tudo do Básico</li>
+          <li class="ok"><i class="fas fa-check"></i> Aulas em grupo ilimitadas</li>
+          <li class="ok"><i class="fas fa-check"></i> Avaliações mensais</li>
+          <li class="ok"><i class="fas fa-check"></i> App de treino</li>
+          <li class="ok"><i class="fas fa-check"></i> 2 sessões de personal</li>
+          <li class="no"><i class="fas fa-times"></i> Personal exclusivo</li>
+        </ul>
+        <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse no Plano Premium." class="btn-primary" target="_blank" rel="noopener">Começar Agora</a>
+      </div>
+      <div class="price-card reveal" data-delay="200">
+        <div class="price-plan">Elite</div>
+        <div class="price-val">
+          <span class="cur">R$</span><span class="val">289</span><span class="per">/mês</span>
+        </div>
+        <ul class="price-feats">
+          <li class="ok"><i class="fas fa-check"></i> Tudo do Premium</li>
+          <li class="ok"><i class="fas fa-check"></i> Personal ilimitado</li>
+          <li class="ok"><i class="fas fa-check"></i> Nutricionista incluso</li>
+          <li class="ok"><i class="fas fa-check"></i> Acesso 24 horas</li>
+          <li class="ok"><i class="fas fa-check"></i> Toalha e amenities</li>
+          <li class="ok"><i class="fas fa-check"></i> Prioridade na grade</li>
+        </ul>
+        <a href="https://wa.me/5511999999999?text=Olá! Tenho interesse no Plano Elite." class="btn-outline" target="_blank" rel="noopener">Começar Agora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== INSTAGRAM ============================== -->
+<section class="insta-section" id="instagram">
+  <div class="insta-bg-canvas" id="instaCanvas"></div>
+  <div class="container">
+    <div class="insta-inner">
+      <div class="insta-text reveal-left">
+        <div class="insta-icon-wrap">
+          <i class="fab fa-instagram"></i>
+        </div>
+        <h2>Siga Nossa<br><span class="gradient-text">Jornada</span></h2>
+        <p>Treinos, transformações, dicas de nutrição e motivação diária. Faça parte da nossa comunidade.</p>
+        <a href="https://instagram.com/titanfitness" class="btn-instagram" target="_blank" rel="noopener">
+          <i class="fab fa-instagram"></i>
+          @titanfitness · Seguir
+        </a>
+      </div>
+      <div class="insta-grid reveal-right">
+        <a href="https://instagram.com/titanfitness" class="insta-thumb" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=75" alt="Post 1" loading="lazy">
+          <div class="insta-thumb-overlay"><i class="fab fa-instagram"></i></div>
+        </a>
+        <a href="https://instagram.com/titanfitness" class="insta-thumb" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=75" alt="Post 2" loading="lazy">
+          <div class="insta-thumb-overlay"><i class="fab fa-instagram"></i></div>
+        </a>
+        <a href="https://instagram.com/titanfitness" class="insta-thumb" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=400&q=75" alt="Post 3" loading="lazy">
+          <div class="insta-thumb-overlay"><i class="fab fa-instagram"></i></div>
+        </a>
+        <a href="https://instagram.com/titanfitness" class="insta-thumb" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=400&q=75" alt="Post 4" loading="lazy">
+          <div class="insta-thumb-overlay"><i class="fab fa-instagram"></i></div>
+        </a>
+        <a href="https://instagram.com/titanfitness" class="insta-thumb" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&q=75" alt="Post 5" loading="lazy">
+          <div class="insta-thumb-overlay"><i class="fab fa-instagram"></i></div>
+        </a>
+        <a href="https://instagram.com/titanfitness" class="insta-thumb" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?w=400&q=75" alt="Post 6" loading="lazy">
+          <div class="insta-thumb-overlay"><i class="fab fa-instagram"></i></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONTACT ============================== -->
+<section class="contact section-pad" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <div class="section-tag">Fale Conosco</div>
+        <h2 class="section-title">Venha nos<br><span class="gradient-text">Visitar</span></h2>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua das Academias, 123<br>Bairro Fitness, São Paulo — SP</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Horários de Funcionamento</strong>
+              <p>Seg–Sex: 05h00 às 23h00<br>Sáb–Dom: 07h00 às 20h00</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">(11) 99999-9999</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:contato@titanfitness.com.br">contato@titanfitness.com.br</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map-wrap reveal-right">
+        <div class="map-placeholder">
+          <i class="fas fa-map-marked-alt"></i>
+          <p>Mapa Google Maps</p>
+          <small>Cole aqui o iframe do Google Maps</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="logo-titan">TITAN</span><span class="logo-fitness">FITNESS</span>
+          </a>
+          <p>Transformando corpos e mentes desde 2015. A academia que leva você além dos seus limites.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/titanfitness" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#programs">Programas</a></li>
+            <li><a href="#gallery">Estrutura</a></li>
+            <li><a href="#trainers">Equipe</a></li>
+            <li><a href="#pricing">Planos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Modalidades</h4>
+          <ul>
+            <li><a href="#">Musculação</a></li>
+            <li><a href="#">HIIT</a></li>
+            <li><a href="#">Yoga & Pilates</a></li>
+            <li><a href="#">Artes Marciais</a></li>
+            <li><a href="#">Personal Training</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Rua das Academias, 123<br>São Paulo — SP</p>
+          <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5511999999999">(11) 99999-9999</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:contato@titanfitness.com.br">contato@titanfitness</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2025 Titan Fitness · Todos os direitos reservados.</p>
+      <p>Desenvolvido com <span class="gradient-text">paixão</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================== FLOATING WHATSAPP ============================== -->
+<a href="https://wa.me/5511999999999" class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <div class="wa-pulse"></div>
+  <i class="fab fa-whatsapp"></i>
+  <div class="wa-tooltip">Fale conosco!</div>
+</a>
+
+<!-- ============================== SCROLL TOP ============================== -->
+<button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- ============================== SCRIPTS ============================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/three-hero.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
